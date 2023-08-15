@@ -65,4 +65,8 @@ gui.addColor(options, "sphereColor").onChange((e) => {
    sphere.material.color.set(e);
 });
 
+gui.addColor({ boxColor: "#eecc00" }, "boxColor").onChange((e) => {
+   box.material.color.set(e);
+});
+
 renderer.setAnimationLoop(animate);
